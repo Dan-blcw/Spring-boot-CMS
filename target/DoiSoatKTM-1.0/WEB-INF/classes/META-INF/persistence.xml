@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="vnpt.media_CrossSale_war_1.0PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.vnpt.media.entity.Customer</class>
+    <class>com.vnpt.media.entity.Orders</class>
+    <class>com.vnpt.media.entity.OrderDetail</class>
+    <class>com.vnpt.media.entity.PpTypeSetting</class>
+    <class>com.vnpt.media.entity.PpEntertainmentSetting</class>
+    <class>com.vnpt.media.entity.PaymentMethodSetting</class>
+    <class>com.vnpt.media.entity.TblSalesProduct</class>
+    <class>com.vnpt.media.entity.TblSales</class>
+    <class>com.vnpt.media.entity.TblUserSales</class>
+    <class>com.vnpt.media.entity.ConfigGoiKemSim</class>
+    <class>com.vnpt.media.entity.GoCity</class>
+    <class>com.vnpt.media.entity.TblMenu</class>
+    <class>com.vnpt.media.entity.TblMenuCategory</class>
+    <class>com.vnpt.media.entity.TblCategory</class>
+    <class>com.vnpt.media.entity.KeySpam</class>
+    <class>com.vnpt.media.entity.TblLocal</class>
+    <class>com.vnpt.media.entity.TblDepartment</class>
+    <class>com.vnpt.media.entity.TblEmployee</class>
+    <class>com.vnpt.media.entity.TblLandingPage</class>
+    <class>com.vnpt.media.entity.ActionMtLog</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:db11g"/>
+      <property name="javax.persistence.jdbc.user" value="myschema"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+    </properties>
+  </persistence-unit>
+</persistence>

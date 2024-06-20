@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>  
+  
+    <!-- Base Definition -->
+    <definition name="base-definition"
+                template="/WEB-INF/views/includes/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/views/includes/header.jsp" /> 
+        <put-attribute name="menu" value="/WEB-INF/views/includes/menu.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/views/includes/footer.jsp" />  
+        <put-attribute name="sidebar" value="/WEB-INF/views/includes/sidebar.jsp" />  
+    </definition>
+
+
+
+    <!-- Users Page -->
+    <definition name="users/users_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách người dùng" /> 
+        <put-attribute name="body" value="/WEB-INF/views/users/users_list.jsp" />  
+    </definition>  
+    
+    <!-- users_edit_info Page -->
+    <definition name="users/users_edit_info" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật thông tin cá nhân" /> 
+        <put-attribute name="body" value="/WEB-INF/views/users/users_edit_info.jsp" />  
+    </definition>  
+    
+    <!-- change_pass Page -->
+    <definition name="users/change_pass" extends="base-definition">  
+        <put-attribute name="title" value="Thay đổi mật khẩu" /> 
+        <put-attribute name="body" value="/WEB-INF/views/users/change_pass.jsp" />  
+    </definition>  
+
+    <!-- Group Page -->
+    <definition name="groups/groups_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách nhóm quyền" /> 
+        <put-attribute name="body" value="/WEB-INF/views/groups/groups_list.jsp" />  
+    </definition>  
+    
+    <!-- Group Page -->
+    <definition name="groups/group_role" extends="base-definition">  
+        <put-attribute name="title" value="Gán quyền cho nhóm" /> 
+        <put-attribute name="body" value="/WEB-INF/views/groups/group_role.jsp" />  
+    </definition>  
+
+    
+    <definition name="banner/banner_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách banner" /> 
+        <put-attribute name="body" value="/WEB-INF/views/banner/banner_list.jsp" />  
+    </definition>
+    
+    <definition name="key_spam/key_spam_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách chặn spam" /> 
+        <put-attribute name="body" value="/WEB-INF/views/key_spam/key_spam_list.jsp" />  
+    </definition>
+    
+    <definition name="menu/menu_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách menu" /> 
+        <put-attribute name="body" value="/WEB-INF/views/menu/menu_list.jsp" />  
+    </definition>  
+    
+    <definition name="tbl_sales/tbl_sales_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách kênh bán hàng" /> 
+        <put-attribute name="body" value="/WEB-INF/views/tbl_sales/tbl_sales_list.jsp" />  
+    </definition>
+    
+    <definition name="news_category/news_category_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách loại tin tức" /> 
+        <put-attribute name="body" value="/WEB-INF/views/news_category/news_category_list.jsp" />  
+    </definition>
+    
+    <definition name="employee/employee_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách tài khoản bán hàng" /> 
+        <put-attribute name="body" value="/WEB-INF/views/employee/employee_list.jsp" />  
+    </definition>
+    
+    <definition name="landing_page/landing_page_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách landingPage" /> 
+        <put-attribute name="body" value="/WEB-INF/views/landing_page/landing_page_list.jsp" />  
+    </definition>
+
+    <!-- product list-->
+    <definition name="production/production_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách product" /> 
+        <put-attribute name="body" value="/WEB-INF/views/production/production_list.jsp" />  
+    </definition>
+    
+    <definition name="production/production_add" extends="base-definition">  
+        <put-attribute name="title" value="Thêm mới product" /> 
+        <put-attribute name="body" value="/WEB-INF/views/production/production_add.jsp" />  
+    </definition>
+    
+    <definition name="production/production_edit" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật product" /> 
+        <put-attribute name="body" value="/WEB-INF/views/production/production_edit.jsp" />  
+    </definition>
+    
+    <definition name="production/production_view" extends="base-definition">  
+        <put-attribute name="title" value="Hiển thị product" /> 
+        <put-attribute name="body" value="/WEB-INF/views/production/production_view.jsp" />  
+    </definition>
+    
+    <definition name="promotion/promotion_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách promotion" /> 
+        <put-attribute name="body" value="/WEB-INF/views/promotion/promotion_list.jsp" />  
+    </definition>
+    
+    <definition name="promotion/promotion_add" extends="base-definition">  
+        <put-attribute name="title" value="Thêm mới promotion" /> 
+        <put-attribute name="body" value="/WEB-INF/views/promotion/promotion_add.jsp" />  
+    </definition>
+    
+    <definition name="promotion/promotion_edit" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật hotDeal" /> 
+        <put-attribute name="body" value="/WEB-INF/views/promotion/promotion_edit.jsp" />  
+    </definition>
+    
+    <definition name="hot_deal/hot_deal_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách hotDeal" /> 
+        <put-attribute name="body" value="/WEB-INF/views/hot_deal/hot_deal_list.jsp" />  
+    </definition>
+    
+    
+    <definition name="hot_deal/hot_deal_add" extends="base-definition">  
+        <put-attribute name="title" value="Thêm mới hotDeal" /> 
+        <put-attribute name="body" value="/WEB-INF/views/hot_deal/hot_deal_add.jsp" />  
+    </definition>
+    
+    <definition name="hot_deal/hot_deal_edit" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật hotDeal" /> 
+        <put-attribute name="body" value="/WEB-INF/views/hot_deal/hot_deal_edit.jsp" />  
+    </definition>
+    
+    
+    <definition name="tbl_category/tbl_category_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách danh mục" /> 
+        <put-attribute name="body" value="/WEB-INF/views/tbl_category/tbl_category_list.jsp" />  
+    </definition>
+    
+    
+        
+    <definition name="tbl_menu/tbl_menu_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách menu" /> 
+        <put-attribute name="body" value="/WEB-INF/views/tbl_menu/tbl_menu_list.jsp" />  
+    </definition>
+    
+    <definition name="tbl_menu/tbl_menu_add" extends="base-definition">  
+        <put-attribute name="title" value="Thêm mới menu" /> 
+        <put-attribute name="body" value="/WEB-INF/views/tbl_menu/tbl_menu_add.jsp" />  
+    </definition>
+    
+    <definition name="tbl_menu/tbl_menu_edit" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật menu" /> 
+        <put-attribute name="body" value="/WEB-INF/views/tbl_menu/tbl_menu_edit.jsp" />  
+    </definition>
+    
+    
+    <definition name="supperliers/supperliers_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách nhà cung cấp" /> 
+        <put-attribute name="body" value="/WEB-INF/views/supperliers/supperliers_list.jsp" />  
+    </definition>
+    
+    <definition name="stats/reportOrderNotSim" extends="base-definition">  
+        <put-attribute name="title" value="Báo cáo đơn hàng mua gói không kèm sim hoàn thành" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/reportOrderNotSim.jsp" />  
+    </definition>
+    
+    <definition name="stats/reportOrderSim" extends="base-definition">  
+        <put-attribute name="title" value="Báo cáo đơn hàng sim số hoàn thành" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/reportOrderSim.jsp" />  
+    </definition>
+    
+    <!-- API Page -->
+    <definition name="api/api_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách API" /> 
+        <put-attribute name="body" value="/WEB-INF/views/api/api_list.jsp" />  
+    </definition>  
+    
+    <definition name="sf/api_sf_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách SF" /> 
+        <put-attribute name="body" value="/WEB-INF/views/sf/api_sf_list.jsp" />  
+    </definition>  
+    
+        <definition name="sf/api_history_details" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách SF" /> 
+        <put-attribute name="body" value="/WEB-INF/views/sf/api_history_details.jsp" />  
+    </definition>  
+    
+<!--            <definition name="api/api_import" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách API" /> 
+        <put-attribute name="body" value="/WEB-INF/views/api/api_list.jsp" />  
+    </definition>  -->
+    
+
+    <!--
+    <definition name="api/update" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách API" /> 
+        <put-attribute name="body" value="/WEB-INF/views/api/api_list.jsp" />  
+    </definition>  
+    -->
+    
+    <!-- 403 Page -->
+    <definition name="403" extends="base-definition">  
+        <put-attribute name="title" value="Từ chối truy cập" /> 
+        <put-attribute name="body" value="/WEB-INF/views/403.jsp" />  
+    </definition>   
+ 
+    <definition name="news/news_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách tin tức" /> 
+        <put-attribute name="body" value="/WEB-INF/views/news/news_list.jsp" />  
+    </definition>
+    
+    <definition name="news/news_add" extends="base-definition">  
+        <put-attribute name="title" value="Thêm mới tin tức" /> 
+        <put-attribute name="body" value="/WEB-INF/views/news/news_add.jsp" />  
+    </definition>
+    
+    <definition name="news/news_edit" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật tin tức" /> 
+        <put-attribute name="body" value="/WEB-INF/views/news/news_edit.jsp" />  
+    </definition>
+    
+    <definition name="customer/customer_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách khách hàng" /> 
+        <put-attribute name="body" value="/WEB-INF/views/customer/customer_list.jsp" />  
+    </definition>
+    
+    <definition name="action_mt_log/action_mt_log_list" extends="base-definition">  
+        <put-attribute name="title" value="Kiểm tra lịch sử tra cứu MT" /> 
+        <put-attribute name="body" value="/WEB-INF/views/action_mt_log/action_mt_log_list.jsp" />  
+    </definition>
+    
+    <definition name="orders/orders_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách đơn hàng" /> 
+        <put-attribute name="body" value="/WEB-INF/views/orders/orders_list.jsp" />  
+    </definition>
+    
+    <definition name="package_sim/package_sim_list" extends="base-definition">  
+        <put-attribute name="title" value="Danh sách gói bán sim theo tiêu chí lọc" /> 
+        <put-attribute name="body" value="/WEB-INF/views/package_sim/package_sim_list.jsp" />  
+    </definition>
+    
+    <definition name="package_sim/package_sim_hot" extends="base-definition">  
+        <put-attribute name="title" value="Thêm mới gói HOT" /> 
+        <put-attribute name="body" value="/WEB-INF/views/package_sim/package_sim_hot.jsp" />  
+    </definition>
+    
+    <definition name="package_sim/package_sim_hot_edit" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật gói HOT" /> 
+        <put-attribute name="body" value="/WEB-INF/views/package_sim/package_sim_hot_edit.jsp" />  
+    </definition>
+    
+    <definition name="package_sim/package_sim_data_combo" extends="base-definition">  
+        <put-attribute name="title" value="Thêm mới gói DATA/COMBO" /> 
+        <put-attribute name="body" value="/WEB-INF/views/package_sim/package_sim_data_combo.jsp" />  
+    </definition>
+    
+    <definition name="package_sim/package_sim_data_combo_edit" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật gói DATA/COMBO" /> 
+        <put-attribute name="body" value="/WEB-INF/views/package_sim/package_sim_data_combo_edit.jsp" />  
+    </definition>
+    
+    <definition name="package_sim/package_sim_nhu_cau" extends="base-definition">  
+        <put-attribute name="title" value="Thêm mới gói theo nhu cầu" /> 
+        <put-attribute name="body" value="/WEB-INF/views/package_sim/package_sim_nhu_cau.jsp" />  
+    </definition>
+    
+    <definition name="package_sim/package_sim_nhu_cau_edit" extends="base-definition">  
+        <put-attribute name="title" value="Cập nhật gói theo nhu cầu" /> 
+        <put-attribute name="body" value="/WEB-INF/views/package_sim/package_sim_nhu_cau_edit.jsp" />  
+    </definition>
+
+    <definition name="order_detail/order_detail_list" extends="base-definition">  
+        <put-attribute name="title" value="Đơn hàng chi tiết" /> 
+        <put-attribute name="body" value="/WEB-INF/views/order_detail/order_detail_list.jsp" />  
+    </definition>
+    
+    <definition name="stats/mtInfo" extends="base-definition">  
+        <put-attribute name="title" value="Lịch sử MT" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/mtInfo.jsp" />  
+    </definition>
+    
+    <definition name="stats/statsOrderBRCD" extends="base-definition">  
+        <put-attribute name="title" value="Báo cáo đơn hàng BRCD" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/statsOrderBRCD.jsp" />  
+    </definition>
+    
+    <definition name="stats/statsBrcdDetail" extends="base-definition">  
+        <put-attribute name="title" value="Báo cáo chi tiết đơn hàng BRCD" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/statsBrcdDetail.jsp" />  
+    </definition>
+    
+    <definition name="stats/statsMobileDetail" extends="base-definition">  
+        <put-attribute name="title" value="Báo cáo chi tiết đơn hàng mua gói di động đơn lẻ" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/statsMobileDetail.jsp" />  
+    </definition>
+    
+    <definition name="stats/statsSimDetail" extends="base-definition">  
+        <put-attribute name="title" value="Báo cáo chi tiết đơn hàng sim số" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/statsSimDetail.jsp" />  
+    </definition>
+    
+    <definition name="stats/statsBrcdSummary" extends="base-definition">  
+        <put-attribute name="title" value="Báo cáo thu gọn đơn hàng BRCD" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/statsBrcdSummary.jsp" />  
+    </definition>
+    
+    <definition name="stats/statsMyTvMobile" extends="base-definition">  
+        <put-attribute name="title" value="Báo cáo đơn hàng MyTv Mobile" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/statsMyTvMobile.jsp" />  
+    </definition>
+    
+    <definition name="stats/ordersNew" extends="base-definition">  
+        <put-attribute name="title" value="Quản lý đơn hàng" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/orders_new.jsp" />  
+    </definition>
+    
+    <definition name="stats/order_detail_simso" extends="base-definition">  
+        <put-attribute name="title" value="Chi tiết đơn hàng sim số" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/order_detail_simso.jsp" />  
+    </definition>
+    
+    <definition name="stats/order_detail_truyenhinh" extends="base-definition">  
+        <put-attribute name="title" value="Chi tiết đơn hàng Internet - Truyền hình" /> 
+        <put-attribute name="body" value="/WEB-INF/views/stats/order_detail_truyenhinh.jsp" />  
+    </definition>
+
+
+    <!-- 404.jsp Page -->
+    <definition name="404" extends="base-definition">  
+        <put-attribute name="title" value="Không tìm thấy trang" /> 
+        <put-attribute name="body" value="/WEB-INF/views/404.jsp" />  
+    </definition>   
+    
+    <!-- 500.jsp Page -->
+    <definition name="500" extends="base-definition">  
+        <put-attribute name="title" value="Lỗi 500" /> 
+        <put-attribute name="body" value="/WEB-INF/views/500.jsp" />  
+    </definition>   
+    
+</tiles-definitions>
